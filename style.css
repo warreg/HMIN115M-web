@@ -1,0 +1,18 @@
+
+.article {
+    overflow: hidden;
+}
+.article-img {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-right: 25px;
+}
+h2 {
+    margin-top: 0px;
+    margin-bottom: 0px ;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
