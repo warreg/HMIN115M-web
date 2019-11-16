@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Liste Recettes</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Liste des Recettes</title>
 </head>
 <body>
-    
-fljhikj
+<nav>
+    <a href="index.html">Acceuil</a>
+    <a href="listeRecettes.php">Recettes</a>
+</nav>    
+<h1>Liste des recettes</h1> <br>
+<article>
 
 
+
+<!-- Affichage liste des recetttes PHP -->
 <?php
 include "./bdd.php";
-
-$liste_rettes = get_recettes();
-
-
-
-// foreach ($liste_recettes as $key => $value) {
-//     echo $value;
-// }
-
-
-
+$liste_recettes = get_recettes();
 foreach ($liste_recettes as $recette) {
-    echo "<h1>" . $recette["titre"] . "</h1>";
-    echo "<p> Par " .$recette["nom"]. "(" .$recette["email"]. ") ; ajouté le : ". $recette["date"]. "</p>"  ;
-    echo "<p> Cuisine : " . $recette["type"] . "</p>";
+    echo '<img class="article-img"  src="' . $recette["photo"] . '" alt=" photo recette " >';
+    echo "<h2>" . $recette["type_recette"] ." : " . $recette["titre"] . "</h2>";
+    echo "<p>  Ajouté le : ". $recette["date_ajout"]. " , par " .$recette["nom"] . "</p>"  ;
     echo "<p> Cuisine : " . $recette["categorie"] . "</p>";
-    echo "<p> Duree: " . $recette["duree"] . "</p>";
+    echo "<p> Duree: " . $recette["duree"] . " min. </p>";
     echo "<p> Pour " . $recette["nbre_personne"] . " personne(s) </p>";
     echo "<p> Preparation: " . $recette["preparation"] . "</p>";
-
-    echo "<hr>" ;//ou ligne horizontale 
+    echo "<p>" . $recette["email"] . "</p>";
+    echo "<hr>" ;// <hr>
 }
 ?>
+<!-- Fin PHP  -->
 
 
+</article>
 </body>
 </html>
