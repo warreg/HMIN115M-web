@@ -3,15 +3,14 @@ window.addEventListener("DOMContentLoaded", function() {
 
     //Ajout nouvelle recette
     var form = document.querySelector("#form-ajout");
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
         var new_recette = new FormData(form);
+        //var input = document.querySelectorAll("input");
         var xhr = new XMLHttpRequest();
-        xhr.open("POST","../PHP/ws_ajout.php",true);
-        xhr.setRequestHeader('X-Requested-With','xmlhttprequest');
+        xhr.open("POST","../PHP/ws_ajout.php");
         xhr.send(new_recette);
-        console.log(new_recette);
-        //new_recette.value = ""
+        //input.value =""; //pour vider les données apres envoi du formulaire
     });
 
 

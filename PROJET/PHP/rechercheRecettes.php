@@ -22,7 +22,7 @@
 <div>
 <form id="form-recherche">
     <input type="submit"  id="btn-rechercher" value="Rechercher">
-    <input type="text"  id="texte-filtre" placeholder="     maitre yoda ">
+    <input type="text"  id="texte-filtre" placeholder="     Rechercher une recette ">
 </form>
 </div>
 

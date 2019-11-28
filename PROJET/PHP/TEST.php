@@ -1,4 +1,4 @@
 <?php
 
-include "./bdd.php";
-$recette = get_recettes_json();
+$id = md5(rand());
+echo $id;

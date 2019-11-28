@@ -3,9 +3,9 @@ window.addEventListener("DOMContentLoaded", function() {
     function lectureRecettes() {
         var requete = new XMLHttpRequest();
 		// on détermine ce qui doit se passer quand on recevra la réponse du service
-		requete.addEventListener("load", function(event) {
+		requete.addEventListener("load", function(e) {
 			// on décode le format JSON pour obtenir un objet Javascript
-            var recettes = JSON.parse(event.target.responseText);
+            var recettes = JSON.parse(e.target.responseText);
             var listeRecettes = document.getElementById("article-recette");
             listeRecettes.innerHTML = "";
             for (var i = 0; i < recettes.length; i++) {
@@ -18,25 +18,25 @@ window.addEventListener("DOMContentLoaded", function() {
                  "<p> Préparation : " + recettes[i].preparation + "</p>" +
                  "<p>" + recettes[i].email + "</p> <hr>";
             }
-		});
+        });
+        
+        var filtre_recherche = document.getElementById("texte-filtre");
+        var texte_filtre = filtre_recherche.value;
+        var url_open = "";
+        if (texte_filtre != null) {
+            url_open = "../PHP/ws_lecture.php?filtre_recherche=" + texte_filtre; 
+        }else{
+            url_open = "../PHP/ws_lecture.php";
+        }
 		// on envoie la requête à l'URL du webservice
-		requete.open("GET", "../PHP/ws_lecture.php");
+		requete.open("GET", url_open);
 		requete.send();
     }
 
     //lectureRecettes();
     var form = document.getElementById("form-recherche");
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        //var filtre_recherche = document.getElementById("texte-filtre");
-        //var filtre = filtre_recherche.value;
-        //envoi de filtre_recherche.value 
-        // if (filtre != ""){
-        //     var xhr = new XMLHttpRequest();
-        //     xhr.open("GET", "../PHP/TEST.php?filtre_recherche=" + filtre);
-        //     xhr.send();
-        // }
-        
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();        
         lectureRecettes();
     });
 
