@@ -13,6 +13,7 @@
     <a href="listeRecettes.php">Recettes</a>
     <a href="rechercheRecettes.php">Recherche</a>
     <a href="ajout.php">Ajouter</a>
+    <a href="formConnexion.php">Connexion</a>
 </nav>    
 <h1>Liste des recettes</h1> <br>
 <article>
@@ -26,7 +27,7 @@ include "./bdd.php";
 $liste_recettes = get_recettes();
 foreach ($liste_recettes as $recette) {
     echo '<img class="article-img"  src="' . $recette["photo"] . '" alt=" photo recette " >';
-    echo "<h2>" . $recette["type_recette"] ." : " . $recette["titre"] . "</h2>";
+    echo "<h2>" . $recette["type_recette"] ." : " . $recette["titre"] . "</h2> <input type='submit'  id='btn-supprimer' value='Supprimer'>";
     echo "<p>  Ajouté le  ". $recette["date_ajout"]. " , par " .$recette["nom"] . "</p>"  ;
     echo "<p> Cuisine  " . $recette["categorie"] . "</p>";
     echo "<p> Duree : " . $recette["duree"] . " min. </p>";

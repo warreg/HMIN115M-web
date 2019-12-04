@@ -24,9 +24,9 @@ window.addEventListener("DOMContentLoaded", function() {
         var texte_filtre = filtre_recherche.value;
         var url_open = "";
         if (texte_filtre != null) {
-            url_open = "../PHP/ws_lecture.php?filtre_recherche=" + texte_filtre; 
+            url_open = "../PHP/wsLecture.php?filtre_recherche=" + texte_filtre; 
         }else{
-            url_open = "../PHP/ws_lecture.php";
+            url_open = "../PHP/wsLecture.php";
         }
 		// on envoie la requête à l'URL du webservice
 		requete.open("GET", url_open);

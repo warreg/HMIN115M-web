@@ -15,6 +15,7 @@
     <a href="./listeRecettes.php">Recettes</a>
     <a href="./rechercheRecettes.php">Recherche</a>
     <a href="ajout.php">Ajouter</a>
+    <a href="formConnexion.php">Connexion</a>
 </nav>    
 <h1>Trouver une recette</h1> <br>
 <article>
