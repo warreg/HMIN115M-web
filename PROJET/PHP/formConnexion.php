@@ -8,16 +8,22 @@
     <script  type="text/javascript" src="../JS/connexion.js"></script>
     <title>Connexion</title>
 </head>
+
+
+
 <body>
+
 <nav>
     <a href="../index.html">Acceuil</a>
     <a href="listeRecettes.php">Recettes</a>
     <a href="rechercheRecettes.php">Recherche</a>
     <a href="ajout.php">Ajouter</a>
     <a href="formConnexion.php">Connexion</a>
-</nav>    
+</nav>  
+
 <br>
 <br>
+
 <div id="affichage">
 <h1>Se connecter</h1> <br>
     <form action="#" method="post"  id="form-connexion">
@@ -28,7 +34,9 @@
         <input type="submit" value="Envoyer">
     </form>
 </div>
-    <p id="msg-erreur"></p>
+<p id="msg-erreur"></p>
+
+
 </body>
 </html>
 

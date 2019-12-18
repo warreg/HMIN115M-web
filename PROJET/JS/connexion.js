@@ -14,7 +14,18 @@ window.addEventListener("DOMContentLoaded", function() {
         });
         xhr.open("POST","../PHP/wsConnexion.php");
         xhr.send(info_connex);
-        document.location.href = "../PHP/connexionStatut.php";
+        // i wait 
+        xhr.addEventListener("load",function(e){
+        // on recup la reponse coté serveur 
+            var reponse = e.target.responseText;
+            var resp = reponse.split("-");
+            if (resp[0] === "true") {
+                msg_erreur.innerHTML = "Bienvenue a pototo  " + resp[1]  ;
+            }else{
+                msg_erreur.innerHTML = "Sorry";
+            }
+         });
+         
     });
 
 
