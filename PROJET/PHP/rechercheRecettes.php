@@ -20,7 +20,7 @@
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a href="ajout.php">Nouvelle Recette</a></li>
       <li><a class="active"  href="rechercheRecettes.php">Recherche</a></li>
-	  <li class="right"><a href="formConnexion.php">Connexion</a></li>
+	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
 	</ul>	  </br></br>
 
     <h1>Trouver une recette</h1> <br>

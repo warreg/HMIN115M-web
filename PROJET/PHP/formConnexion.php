@@ -22,13 +22,13 @@
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a href="ajout.php">Nouvelle Recette</a></li>
       <li><a href="rechercheRecettes.php">Recherche</a></li>
-	  <li class="right"><a class="active" href="formConnexion.php">Connexion</a></li>
+	  <li class="right"><a id="deconnex" class="active" href="formConnexion.php">Connexion</a></li>
 </ul>	 </br></br> 
-
-        <div id="containerr">
+</br></br></br></br><div id="affichage">
+    <div id="containerr">
             <!-- zone de connexion -->
 
-<div id="affichage">
+
                 <h1>Connexion</h1>
                 <form action="#" method="post"  id="form-connexion">
                 <label><b>Nom d'utilisateur</b></label>
@@ -38,11 +38,14 @@
                 <input type="password" placeholder="Entrer le mot de passe" name="mdp" id="mdp" required>
 
                 <center><input type="submit" id='submit' value='SE CONNECTER' ></center>
+                <p id="msg-erreur" style="color:#f00d"></p>
             </form>
+            
         </div>
-</div>
+        
+    </div>
 
-<p id="msg-erreur"></p>
+
 
 <footer>
     <p>© 2019 Wade & Marone</p>

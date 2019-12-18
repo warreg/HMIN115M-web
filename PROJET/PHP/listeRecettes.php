@@ -31,7 +31,7 @@
 	  <li><a class="active" href="listeRecettes.php">Recettes</a></li>
     <li><a href="ajout.php">Nouvelle Recette</a></li>
     <li><a href="rechercheRecettes.php">Recherche</a></li>
-	  <li class="right"><a href="formConnexion.php">Connexion</a></li>
+	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
 	</ul>	
   </br></br></br> 
 
