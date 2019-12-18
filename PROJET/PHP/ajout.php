@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet"  href="css/bootstrap.min.css" > 
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Styles.css">
     <script type="text/javascript"  src="../JS/newRecette.js"></script>
     <title>Marmit'UM | Ajout </title>
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html">Acceuil</a>
-        <a href="listeRecettes.php">Recettes</a>
-        <a href="rechercheRecettes.php">Recherche</a>
-        <a href="ajout.php">Ajouter</a>
-        <a href="formConnexion.php">Connexion</a>
-    </nav>
-    <body>
+    <ul class="topnav">
+	  <li><a href="../index.html">Accueil</a></li>
+	  <li><a href="listeRecettes.php">Recettes</a></li>
+      <li><a class="active" href="ajout.php">Nouvelle Recette</a></li>
+      <li><a href="rechercheRecettes.php">Recherche</a></li>
+	  <li class="right"><a href="formConnexion.php">Connexion</a></li>
+	</ul>	</br>
         
-        <h1>Nouvelle recette</h1> <hr> <br> 
-
+    <div id="containerrr">
+        <center><h1>Nouvelle recette</h1></center>
         <form id="form-ajout">
             <p>
                 <label>Titre de la recette :</label>
@@ -69,8 +72,16 @@
                 <input type="text" name="photo"   required placeholder="http://google.com/imagegraffiti.jpg">
             </p>
             <p>
+                <center>
                 <input type="submit" value="Ajouter">
+                </center>
             </p>
+            </div></br> </br> </br> 
+
+
+<footer>
+    <p>© 2019 Wade & Marone</p>
+</footer>
         </form>
     </body>
 </html>
