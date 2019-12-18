@@ -12,13 +12,15 @@ window.addEventListener("DOMContentLoaded", function() {
                 listeRecettes.innerHTML += '<img class=article-img src=" ' + recettes[i].photo + ' " alt="photo recette"> ' +
                  "<h2> " + recettes[i].type_recette + " : " + recettes[i].titre + "</h2>" +
                  "<p> Ajouté le  " + recettes[i].date_ajout + " , par " + recettes[i].nom + "</p>" +
-                 "<p> Cuisine  " + recettes[i].categorie + "</p>" +
+                 "<p> Cuisine  " + recettes[i].categorie + "</p>" + 
                  "<p> Durée : " + recettes[i].duree + "min. </p>" + 
                  "<p> Pour " + recettes[i].nbre_personne + " personne(s) </p>" + 
                  "<p> Préparation : " + recettes[i].preparation + "</p>" +
-                 "<p>" + recettes[i].email + "</p> <hr>";
+                 "<p>" + recettes[i].email + "</p>" +
+                 "<input type='button'  id='btn-supprimer'  data-id_rec=" + recettes[i].id_recette + "  value='Supprimer'>  <hr> ";
             }
         });
+        
         
         var filtre_recherche = document.getElementById("texte-filtre");
         var texte_filtre = filtre_recherche.value;

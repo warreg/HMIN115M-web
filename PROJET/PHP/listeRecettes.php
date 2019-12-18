@@ -27,18 +27,19 @@ include "./bdd.php";
 $liste_recettes = get_recettes();
 foreach ($liste_recettes as $recette) {
     echo '<img class="article-img"  src="' . $recette["photo"] . '" alt=" photo recette " >';
-    echo "<h2>" . $recette["type_recette"] ." : " . $recette["titre"] . "</h2> <input type='submit'  id='btn-supprimer' value='Supprimer'>";
+    echo "<h2>" . $recette["type_recette"] ." : " . $recette["titre"] . "</h2> " ; 
     echo "<p>  Ajouté le  ". $recette["date_ajout"]. " , par " .$recette["nom"] . "</p>"  ;
     echo "<p> Cuisine  " . $recette["categorie"] . "</p>";
     echo "<p> Duree : " . $recette["duree"] . " min. </p>";
     echo "<p> Pour " . $recette["nbre_personne"] . " personne(s) </p>";
     echo "<p> Preparation: " . $recette["preparation"] . "</p>";
     echo "<p>" . $recette["email"] . "</p>";
+    //echo "<div  id='recette_id' data-id_rec=" . $recette["id_recette"] . "></div>";
     echo "<hr>" ;// <hr>
 }
 
 ?>
-<!-- Fin PHP  -->
+
 
 
 </article>

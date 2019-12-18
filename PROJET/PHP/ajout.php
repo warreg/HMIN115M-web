@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/style.css">
     <script type="text/javascript"  src="../JS/newRecette.js"></script>
-    <title>Marmit'UM</title>
+    <title>Marmit'UM | Ajout </title>
 </head>
 
 <body>

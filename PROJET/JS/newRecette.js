@@ -10,7 +10,8 @@ window.addEventListener("DOMContentLoaded", function() {
         var xhr = new XMLHttpRequest();
         xhr.open("POST","../PHP/wsAjout.php");
         xhr.send(new_recette);
-        //input.value =""; //pour vider les données apres envoi du formulaire
+        alert("Nouvelle recette ajoutée !");//input.value =""; //pour vider les données apres envoi du formulaire
+        //document.location.href = "../PHP/listeRecettes.php";
     });
 
 

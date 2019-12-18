@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/style.css">
     <script type="text/javascript"  src="../JS/getRecettes.js"></script>
+    <script type="text/javascript"  src="../JS/delRecette.js"></script>
     <title>Rechercher recettes</title>
 </head>
 
@@ -18,7 +19,7 @@
     <a href="formConnexion.php">Connexion</a>
 </nav>    
 <h1>Trouver une recette</h1> <br>
-<article>
+
 
 <div>
 <form id="form-recherche">
