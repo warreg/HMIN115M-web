@@ -19,6 +19,14 @@ window.addEventListener("DOMContentLoaded", function() {
                  "<p>" + recettes[i].email + "</p>" +
                  "<input type='button'  id='btn-supprimer'  data-id_rec=" + recettes[i].id_recette + "  value='Supprimer'>  <hr> ";
             }
+            var btn = document.getElementById("btn-supprimer");
+            btn.addEventListener("click", function() {
+                var id_recette =  btn.dataset.id_rec ;
+                requete.open("GET","../PHP/wsSuppression.php?id_recette=" + id_recette);
+                requete.send();
+                alert(" Recette supprimée !");  // js confirm ?
+                lectureRecettes();//document.location.href = "../PHP/rechercheRecettes.php";
+            }); 
         });
         
         

@@ -29,17 +29,19 @@
 <ul class="topnav">
 	  <li><a href="../index.html">Accueil</a></li>
 	  <li><a class="active" href="listeRecettes.php">Recettes</a></li>
-    <li><a href="ajout.php">Nouvelle Recette</a></li>
     <li><a href="rechercheRecettes.php">Recherche</a></li>
+    <li><a href="ajout.php">Nouvelle Recette</a></li>
 	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
 	</ul>	
-  </br></br></br> 
+  </br><br><br>
+  <h1>Liste des recettes</h1> 
 
 <!-- Affichage liste des recetttes PHP -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
    
   <!-- Affichage liste des recetttes PHP -->
+  
   <?php
 include "./bdd.php";
 $liste_recettes = get_recettes();

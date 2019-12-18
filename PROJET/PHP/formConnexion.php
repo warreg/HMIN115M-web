@@ -20,11 +20,11 @@
 <ul class="topnav">
 	  <li><a  href="../index.html">Accueil</a></li>
 	  <li><a href="listeRecettes.php">Recettes</a></li>
-      <li><a href="ajout.php">Nouvelle Recette</a></li>
       <li><a href="rechercheRecettes.php">Recherche</a></li>
+      <li><a href="ajout.php">Nouvelle Recette</a></li>
 	  <li class="right"><a id="deconnex" class="active" href="formConnexion.php">Connexion</a></li>
 </ul>	 </br></br> 
-</br></br></br></br><div id="affichage">
+</br></br><div id="affichage">
     <div id="containerr">
             <!-- zone de connexion -->
 
@@ -43,7 +43,7 @@
             
         </div>
         
-    </div>
+    </div></br></br>
 
 
 

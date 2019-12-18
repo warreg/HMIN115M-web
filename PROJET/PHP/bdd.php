@@ -21,7 +21,7 @@ function del_recette($id_recette){
     $arr_recette = get_recettes(); 
     foreach ($arr_recette as $num_rec => $rec) {
         if ($rec["id_recette"] == $id_recette){  
-            unset($arr_recette[$num_rec]);
+            array_splice($arr_recette,$num_rec,1);
         }
     }
     file_put_contents("../JSON/data.json", json_encode($arr_recette));

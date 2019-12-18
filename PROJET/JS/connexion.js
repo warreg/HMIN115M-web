@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 msg_affichage.innerHTML = "<center><h2>Bienvenue sur Marmit'UM </h2>  " + "<font color='#53af57'><h2>"+resp[1]+"</h2></font></center>"+'</br></br><img src="../img/tea.png" alt="Nature" style="width:100%; height:100%">'  ;
                 deconex.innerHTML = "Deconnexion";
             }else{
-                msg_erreur.innerHTML = "<center>Identifiants incorrects</center>";
+                msg_erreur.innerHTML = "<center>Identifiants incorrects </center>";
             }
          });
          

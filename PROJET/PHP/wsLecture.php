@@ -9,7 +9,7 @@ if (!empty($_REQUEST["filtre_recherche"])){
         $arr_recette_filtre = array();
         foreach ($arr_recette as $key => $val) {
             foreach ($val as $key1 => $val1) {
-                if (stripos($val1,$filtre_recherche)){
+                if (preg_match("/\b$filtre_recherche\b/i",$val1)){
                     array_push($arr_recette_filtre,$val);
                     break;
                 }

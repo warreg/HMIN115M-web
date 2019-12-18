@@ -1,3 +1,7 @@
+<?php
+session_start();
+$etat = $_SESSION["connexion"];
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,19 +13,19 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
     <script type="text/javascript"  src="../JS/getRecettes.js"></script>
-    <script type="text/javascript"  src="../JS/delRecette.js"></script>
     <link rel="stylesheet" href="../CSS/Styles.css">
     <title>Marmit'UM | Rechercher</title>
 </head>
+
 
 <body>
 <ul class="topnav">
 	  <li><a href="../index.html">Accueil</a></li>
 	  <li><a href="listeRecettes.php">Recettes</a></li>
-      <li><a href="ajout.php">Nouvelle Recette</a></li>
       <li><a class="active"  href="rechercheRecettes.php">Recherche</a></li>
+      <li><a href="ajout.php">Nouvelle Recette</a></li>
 	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
-	</ul>	  </br></br>
+	</ul>	  </br></br><br>
 
     <h1>Trouver une recette</h1> <br>
     <article>
