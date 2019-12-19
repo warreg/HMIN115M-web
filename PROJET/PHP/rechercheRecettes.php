@@ -38,11 +38,11 @@ $etat = $_SESSION["connexion"];
         <div>
             <article id="article-recette">
         </div>
-    </article><br><br>
+    </article>
 
 
 
-<footer>
+<footer style="margin-top:35%">
     <p>© 2019 Wade & Marone</p>
 </footer>
 

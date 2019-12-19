@@ -79,7 +79,7 @@ session_start();
                 <input type="submit" value="Ajouter">
                 </center>
             </p>
-            </div></br> </br> </br> 
+            </div></br>
 
 
 <footer>

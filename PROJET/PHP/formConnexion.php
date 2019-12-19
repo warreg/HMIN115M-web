@@ -47,7 +47,7 @@
 
 
 
-<footer>
+<footer style="margin-top:16%">
     <p>© 2019 Wade & Marone</p>
 </footer>
 
