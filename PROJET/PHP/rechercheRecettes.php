@@ -42,7 +42,7 @@ $etat = $_SESSION["connexion"];
 
 
 
-<footer>
+<footer style="margin-top:35%">
     <p>© 2019 Wade & Marone</p>
 </footer>
 

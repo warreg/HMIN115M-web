@@ -33,8 +33,8 @@
     <li><a href="ajout.php">Nouvelle Recette</a></li>
 	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
 	</ul>	
-  </br><br><br>
-  <h1>Liste des recettes</h1> 
+  </br><br><br></br><br><br>
+  <center><h1>Liste des recettes</h1> </center>
 
 <!-- Affichage liste des recetttes PHP -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
@@ -68,7 +68,7 @@ foreach ($liste_recettes as $recette) {
 
 </br></br></br>
 
-<footer>
+<footer >
     <p>© 2019 Wade & Marone</p>
 </footer>
 </body>
