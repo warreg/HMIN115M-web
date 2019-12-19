@@ -1,5 +1,7 @@
-# HMIN115M-web
+# HMIN115M-Projet Web
+# Auteurs : WADE Gérard & MARONE Jean 
 
-Tout le code fonctionne jusqu'à la partie authentification et suppression.
-En effet le bouton supprimer n'est fonctionnel uniquement pour le premier élément de la liste mais ne peut pas être activé pour les autres élements. 
-Ensuite concernant l'authentification, on est arrivé à verifier si l'utilisateur est bien présent ou pas dans la base de données des utilisateurs, et modification de l'affichage en javascript de l'affichage en fonction. Mais on n'a pas pu gérer l'état de connexion pour autoriser la suppression ou l'ajout. 
+Application web de recettes culinaires.
+5 pages: Acceuil , Recettes, Recherche, Nouvelle recette et Connexion.
+Visualisation  et Recherche des recettes sans authentification nécessaire, mais la suppression et l'ajout de recette nécessitent une authentification préalable. 
+Le fichier `users.json`  contient 3 identifiants (dont login: *mathias* ; pwd: *chouet*) pour tester la connexion.
