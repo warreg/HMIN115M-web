@@ -6,12 +6,19 @@ window.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(e) {
         e.preventDefault();
         var new_recette = new FormData(form);
-        //var input = document.querySelectorAll("input");
         var xhr = new XMLHttpRequest();
         xhr.open("POST","../PHP/wsAjout.php");
         xhr.send(new_recette);
-        alert("Nouvelle recette ajoutée !");//input.value =""; //pour vider les données apres envoi du formulaire
-        document.location.href = "../PHP/listeRecettes.php";
+        xhr.addEventListener("load",function(event){
+            var rep = event.target.responseText;
+            if (rep === "ok"){
+                alert("Recette ajoutée avec succès ! ");
+                document.location.href = "../PHP/listeRecettes.php";
+            }else{
+                alert(" Ajout impossible !\n Connectez-vous d'abord  !");
+                document.location.href = "../PHP/formConnexion.php";
+            }
+        });
     });
 
 

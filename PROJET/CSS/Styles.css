@@ -64,15 +64,8 @@ footer{
     padding: 5px;
     background-color: #272727;
     color: #fff;
-
-}
-lol {
-    margin-top: 31.5%;
 }
 
-
-body{
-}
 /*pour l'ajout*/
 #containerrr{
   width:1000px;
@@ -118,7 +111,6 @@ textarea {
 input[type=submit] {
   background-color: #53af57;
   color: white;
-  position: ;
   padding: 14px 20px;
   margin: 8px 0;
   text-align: center;
@@ -132,9 +124,6 @@ input[type=submit]:hover {
   border: 1px solid #53af57;
 }
 
-
-body{
-}
 /*pour la conection*/
 #containerr{
   width:400px;

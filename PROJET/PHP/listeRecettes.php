@@ -27,7 +27,7 @@
 </head>
 <body>
 <ul class="topnav">
-	  <li><a href="../index.html">Accueil</a></li>
+	  <li><a href="../index.php">Accueil</a></li>
 	  <li><a class="active" href="listeRecettes.php">Recettes</a></li>
     <li><a href="rechercheRecettes.php">Recherche</a></li>
     <li><a href="ajout.php">Nouvelle Recette</a></li>

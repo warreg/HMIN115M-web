@@ -1,3 +1,7 @@
+<?php
+session_start();
+$etat = $_SESSION["connexion"];
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,19 +14,25 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/Styles.css">
     <script  type="text/javascript" src="../JS/connexion.js"></script>
+    <script type="text/javascript" src="../JS/deconnexion.js"></script>
     <title>Marmit'UM | Connexion</title>
 </head>
-
 
 
 <body>
 
 <ul class="topnav">
-	  <li><a  href="../index.html">Accueil</a></li>
+	  <li><a  href="../index.php">Accueil</a></li>
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a href="rechercheRecettes.php">Recherche</a></li>
       <li><a href="ajout.php">Nouvelle Recette</a></li>
-	  <li class="right"><a id="deconnex" class="active" href="formConnexion.php">Connexion</a></li>
+      <li class="right"><a id="deconnex" class="active" <?php 
+        if ($etat == "true") {
+            echo " id='deconnex' href='formConnexion.php'> Deconnexion";
+        }else{
+            echo "href='formConnexion.php'> Connexion";
+        }
+        ?></a></li>
 </ul>	 </br></br> 
 </br></br><div id="affichage">
     <div id="containerr">
@@ -47,7 +57,7 @@
 
 
 
-<footer style="margin-top:16%">
+<footer>
     <p>© 2019 Wade & Marone</p>
 </footer>
 

@@ -20,7 +20,7 @@ $etat = $_SESSION["connexion"];
 
 <body>
 <ul class="topnav">
-	  <li><a href="../index.html">Accueil</a></li>
+	  <li><a href="../index.php">Accueil</a></li>
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a class="active"  href="rechercheRecettes.php">Recherche</a></li>
       <li><a href="ajout.php">Nouvelle Recette</a></li>
@@ -38,11 +38,11 @@ $etat = $_SESSION["connexion"];
         <div>
             <article id="article-recette">
         </div>
-    </article>
+    </article><br><br>
 
 
 
-<footer style="margin-top:35%">
+<footer>
     <p>© 2019 Wade & Marone</p>
 </footer>
 

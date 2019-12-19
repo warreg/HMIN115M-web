@@ -19,7 +19,7 @@ session_start();
 
 <body>
     <ul class="topnav">
-	  <li><a href="../index.html">Accueil</a></li>
+	  <li><a href="../index.php">Accueil</a></li>
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a href="rechercheRecettes.php">Recherche</a></li>
       <li><a class="active" href="ajout.php">Nouvelle Recette</a></li>
@@ -79,7 +79,7 @@ session_start();
                 <input type="submit" value="Ajouter">
                 </center>
             </p>
-            </div></br>
+            </div></br> </br> </br> 
 
 
 <footer>

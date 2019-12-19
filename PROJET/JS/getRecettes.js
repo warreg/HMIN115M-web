@@ -17,16 +17,28 @@ window.addEventListener("DOMContentLoaded", function() {
                  "<p> Pour " + recettes[i].nbre_personne + " personne(s) </p>" + 
                  "<p> Préparation : " + recettes[i].preparation + "</p>" +
                  "<p>" + recettes[i].email + "</p>" +
-                 "<input type='button'  id='btn-supprimer'  data-id_rec=" + recettes[i].id_recette + "  value='Supprimer'>  <hr> ";
+                 "<input type='button'  class='btn-supprimer'  data-id_rec=" + recettes[i].id_recette + "  value='Supprimer'>  <hr> ";
             }
-            var btn = document.getElementById("btn-supprimer");
-            btn.addEventListener("click", function() {
-                var id_recette =  btn.dataset.id_rec ;
-                requete.open("GET","../PHP/wsSuppression.php?id_recette=" + id_recette);
-                requete.send();
-                alert(" Recette supprimée !");  // js confirm ?
-                lectureRecettes();//document.location.href = "../PHP/rechercheRecettes.php";
-            }); 
+            var btn = document.getElementsByClassName("btn-supprimer");
+
+            for (var i = 0; i<btn.length ; i++){
+                btn[i].addEventListener("click", function() {
+                    var id_recette =  this.dataset.id_rec ;
+                    requete.open("GET","../PHP/wsSuppression.php?id_recette=" + id_recette);
+                    requete.send();
+                    requete.addEventListener("load",function(event){
+                        var rep = event.target.responseText;
+                        if (rep === "ok"){
+                            alert("Recette supprimée avec succès ! ");
+                        }else{
+                            alert(" Suppression impossible !\n Connectez-vous d'abord  !");
+                        }
+                    });
+                    //alert(" Recette supprimée !");  // js confirm ?
+                    lectureRecettes();//document.location.href = "../PHP/rechercheRecettes.php";
+                }); 
+            }
+            
         });
         
         
