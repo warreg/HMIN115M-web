@@ -56,7 +56,6 @@ img {
 
 
 footer{
-    position: fixed;
     bottom:0;
     width:100%;
     padding-top:50px;
@@ -65,6 +64,7 @@ footer{
     padding: 5px;
     background-color: #272727;
     color: #fff;
+    margin-top:100%;
 }
 
 
