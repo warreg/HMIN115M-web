@@ -13,6 +13,7 @@ $etat = $_SESSION["connexion"];
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
     <script type="text/javascript"  src="../JS/getRecettes.js"></script>
+    <script type="text/javascript" src="../JS/deconnexion.js"></script>
     <link rel="stylesheet" href="../CSS/Styles.css">
     <title>Marmit'UM | Rechercher</title>
 </head>
@@ -24,7 +25,13 @@ $etat = $_SESSION["connexion"];
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a class="active"  href="rechercheRecettes.php">Recherche</a></li>
       <li><a href="ajout.php">Nouvelle Recette</a></li>
-	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
+	  <li class="right"><a <?php 
+        if ($etat == "true") {
+            echo " id='deconnex' href='formConnexion.php'> Deconnexion";
+        }else{
+            echo "href='formConnexion.php'> Connexion";
+        }
+        ?> </a></li>
 	</ul>	  </br></br><br>
 
     <h1>Trouver une recette</h1> <br>

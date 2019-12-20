@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$etat = $_SESSION["connexion"];
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,7 +12,7 @@
     <link rel="stylesheet"  href="css/bootstrap.min.css" > 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
-    <script type="text/javascript" src="#"></script>
+    <script type="text/javascript" src="../JS/deconnexion.js"></script>
 
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +35,13 @@
 	  <li><a class="active" href="listeRecettes.php">Recettes</a></li>
     <li><a href="rechercheRecettes.php">Recherche</a></li>
     <li><a href="ajout.php">Nouvelle Recette</a></li>
-	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
+	  <li class="right"><a <?php 
+        if ($etat == "true") {
+            echo " id='deconnex' href='../PHP/formConnexion.php'> Deconnexion";
+        }else{
+            echo "href='formConnexion.php'> Connexion";
+        }
+        ?> </a></li>
 	</ul>	
   </br><br><br></br><br><br>
   <center><h1>Liste des recettes</h1> </center>

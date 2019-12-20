@@ -1,5 +1,6 @@
-<?php 
+<?php
 session_start();
+$etat = $_SESSION["connexion"];
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,6 +15,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/Styles.css">
     <script type="text/javascript"  src="../JS/newRecette.js"></script>
+    <script type="text/javascript" src="../JS/deconnexion.js"></script>
     <title>Marmit'UM | Ajout </title>
 </head>
 
@@ -23,7 +25,13 @@ session_start();
 	  <li><a href="listeRecettes.php">Recettes</a></li>
       <li><a href="rechercheRecettes.php">Recherche</a></li>
       <li><a class="active" href="ajout.php">Nouvelle Recette</a></li>
-	  <!-- <li class="right"><a href="formConnexion.php">Connexion</a></li> -->
+	  <li class="right"><a <?php 
+        if ($etat == "true") {
+            echo " id='deconnex' href='formConnexion.php'> Deconnexion";
+        }else{
+            echo "href='formConnexion.php'> Connexion";
+        }
+        ?></a></li>
 	</ul>	</br>
         
     <div id="containerrr">
