@@ -1,5 +1,5 @@
 # HMIN115M-Projet Web
-# Auteurs : WADE Gérard & MARONE Jean 
+## Auteurs : WADE Gérard & MARONE Jean 
 
 Application web de recettes culinaires.
 5 pages: Acceuil , Recettes, Recherche, Nouvelle recette et Connexion.
